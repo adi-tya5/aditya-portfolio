@@ -32,10 +32,23 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-primary text-white text-center p-5">
-    <h1 class="display-5">Hello, I'm Aditya 👋</h1>
-    <p>Computer Engineering Student | Web Dev Learner</p>
-  </section>
+<section class="bg-dark text-white text-center p-5">
+  <h1 class="display-4">Hi, I'm <span class="text-warning">Aditya</span></h1>
+  <h2 class="mt-3"><span id="typed"></span></h2>
+  <p class="lead mt-3">Computer Engineering Student | Web Dev Learner | Creative Thinker</p>
+  <a href="Aditya_Resume.pdf" class="btn btn-warning btn-lg mt-4" download>Download Resume</a>
+</section>
+
+<!-- Typed.js Script -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed", {
+    strings: ["Web Developer 💻", "Creative Thinker 🎨", "Problem Solver 🧠"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
 
   <!-- Profile Photo -->
 <section class="text-center my-4">
