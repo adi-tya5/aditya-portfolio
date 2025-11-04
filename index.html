@@ -62,6 +62,24 @@ h1, h2, h3, h4 {
   transition: all 0.3s ease;
 }
 </style>
+<style>
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  border-left: 5px solid #ffc107;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+</style>
 
 </head>
 <body>
@@ -122,21 +140,44 @@ h1, h2, h3, h4 {
     <p>I love building student-friendly tech and simplifying complex ideas.</p>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="container-fluid my-5 px-4" >
-    <h2>Projects</h2>
-    <div class="row" >
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title" >Bootstrap Portfolio</h5>
-            <p class="card-text">My first responsive website using Bootstrap!</p>
-          </div>
+ <!-- Projects Section -->
+<section id="projects" class="container-fluid my-5 px-4">
+  <h2 class="text-center mb-5">🚀 My Projects</h2>
+  <div class="row">
+
+<!-- Bootstrap Portfolio -->
+<div class="col-12 col-md-6 col-lg-4 mb-4">
+  <div class="card h-100 shadow-sm project-card">
+    <div class="card-body">
+      <h5 class="card-title">🌐 Bootstrap Portfolio</h5>
+      <p class="card-text">My first responsive website using Bootstrap. Clean layout, mobile-friendly, and hosted on GitHub Pages.</p>
+      <a href="https://adi-tya5.github.io/bootstrap-portfolio/" target="_blank" class="btn btn-warning mt-3">Live Demo</a>
+    </div>
+  </div>
+</div>
+
+    <!-- Dark Mode Portfolio -->
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="card h-100 shadow-sm project-card">
+        <div class="card-body">
+          <h5 class="card-title">🌙 Dark Mode Portfolio</h5>
+          <p class="card-text">A stylish portfolio with dark mode toggle, custom fonts, and scroll animations using AOS.</p>
         </div>
       </div>
-      <!-- Add more cards here -->
     </div>
-  </section>
+
+    <!-- Hover Effects Showcase -->
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="card h-100 shadow-sm project-card">
+        <div class="card-body">
+          <h5 class="card-title">✨ Hover Effects Showcase</h5>
+          <p class="card-text">Interactive cards with smooth hover effects, glowing borders, and animated transitions.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="bg-light p-5 text-center">
@@ -146,7 +187,7 @@ h1, h2, h3, h4 {
 
   <!-- Social Media Icons -->
 <section class="text-center my-4">
-  <a href="https://github.com/adi-tya5" target="_blank" class="mx-2">
+  <a href="https://adi-tya5.github.io/dark-mode-portfolio/" target="_blank" class="btn btn-warning mt-3">Live Demo</a>
     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="30" alt="GitHub">
   </a>
   <a href="https://www.linkedin.com/in/aditya-bangar-12861a37a" target="_blank" class="mx-2">
