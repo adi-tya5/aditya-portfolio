@@ -28,6 +28,14 @@
   100% { background-position: 0% 50%; }
 }
 </style>
+
+<!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </head>
 <body>
 
@@ -81,13 +89,13 @@
 </section>
 
   <!-- About Section -->
-  <section id="about" class="container-fluid my-5 px-4">
+  <section id="about" class="container-fluid my-5 px-4" data-aos="fade-up">
     <h2>About Me</h2>
     <p>I love building student-friendly tech and simplifying complex ideas.</p>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="container-fluid my-5 px-4">
+  <section id="projects" class="container-fluid my-5 px-4" data-aos="zoom-in">
     <h2>Projects</h2>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 mb-4">
@@ -103,7 +111,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-light p-5 text-center">
+  <section id="contact" class="bg-light p-5 text-center" data-aos="fade-left">
     <h2>Contact Me</h2>
     <p>Email: aditya555@example.com</p>
   </section>
