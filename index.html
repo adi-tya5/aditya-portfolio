@@ -31,7 +31,13 @@
   100% { background-position: 0% 50%; }
 }
 </style>
-
+<style>
+.profile-wrapper:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+</style>
 <style>
 .project-tags {
   margin-top: 10px;
@@ -148,10 +154,14 @@ h1, h2, h3, h4 {
   });
 </script>
 
-  <!-- Profile Photo -->
-<section class="text-center my-4">
-  <img src="aditya.jpg" alt="Aditya" class="img-fluid rounded-4 mx-auto d-block" style="width: 150px; height: 200px; object-fit: cover;">
-  <h3 class="mt-3">Aditya</h3>
+ <!-- Profile Photo -->
+<section class="text-center my-5">
+  <div class="profile-wrapper p-4 rounded-4 shadow-sm mx-auto" style="max-width: 320px; background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+    <img src="aditya1.jpg" alt="Aditya" class="img-fluid rounded-circle border border-3 border-warning" style="width: 150px; height: 150px; object-fit: cover;">
+    <h3 class="mt-3 mb-1">Aditya</h3>
+    <p class="text-muted mb-0">Computer Engineering Student @ AVCOE</p>
+    <p class="small text-secondary">Passionate about building interactive, student-friendly websites with clean UI & cool effects ✨</p>
+  </div>
 </section>
 
 <!-- About Section -->
@@ -210,9 +220,7 @@ h1, h2, h3, h4 {
           <p class="card-text">A stylish portfolio with dark mode toggle, custom fonts, and scroll animations using AOS.</p>
           <div class="project-tags">
           <span class="badge bg-dark">Dark Mode</span>
-          <span class="badge bg-primary">Bootstrap</span>
           <span class="badge bg-warning text-dark">Custom Fonts</span>
-          <span class="badge bg-success">Responsive</span>
           <span class="badge bg-info text-dark">AOS</span>
         </div>
         </div>
@@ -228,8 +236,6 @@ h1, h2, h3, h4 {
           <div class="project-tags">
             <span class="badge bg-warning text-dark">Hover Effects</span>
             <span class="badge bg-info text-dark">CSS Transitions</span>
-            <span class="badge bg-success">Responsive</span>
-            <span class="badge bg-primary">Bootstrap</span>
             <span class="badge bg-dark">UI Design</span>
           </div>
         </div>
@@ -247,7 +253,7 @@ h1, h2, h3, h4 {
 
   <!-- Social Media Icons -->
 <section class="text-center my-4">
-  <a href="https://adi-tya5.github.io/dark-mode-portfolio/" target="_blank" class="btn btn-warning mt-3">Live Demo</a>
+  
     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="30" alt="GitHub">
   </a>
   <a href="https://www.linkedin.com/in/aditya-bangar-12861a37a" target="_blank" class="mx-2">
